@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Evidence before a verdict · Private triage</title>
+  <style>
+    :root{color-scheme:light;--ink:#203448;--muted:#526476;--line:#d1dce5;--paper:#f3f6f8;--blue:#234e74;--warn:#765213}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,sans-serif}.wrap{max-width:1120px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;gap:16px;align-items:center}.brand{font-weight:750}.badge{border:1px solid #b8c9d6;border-radius:8px;padding:6px 10px;font-size:.8rem;background:#e8eff5}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.12;letter-spacing:-.04em;max-width:780px;margin:36px 0 16px}h2{font-size:1.2rem;margin:0 0 14px}h3{font-size:1rem;margin:0 0 7px}p{margin:0 0 12px}.muted{color:var(--muted)}.layout{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:22px 0}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;min-width:0}.field{display:block;font-weight:650;margin-bottom:8px}select,textarea,button{font:inherit;color:inherit;min-height:44px}select,textarea{width:100%;border:1px solid #9cabb8;border-radius:9px;padding:10px;background:white}textarea{font:13px/1.5 ui-monospace,Consolas,monospace;min-height:320px;resize:vertical}button{cursor:pointer;background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 12px;font-weight:650}button.primary{background:var(--blue);border-color:var(--blue);color:#fff}button:disabled{opacity:.5;cursor:default}button:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #b46f1f;outline-offset:3px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.notice{padding:14px;border-radius:9px;background:#e6eef5;margin:22px 0;overflow-wrap:anywhere}.notice.error{background:#f9e7df;color:#813e23}.evidence{border-left:3px solid #9eb6ca;padding:4px 0 4px 13px;margin:16px 0}.evidence pre,pre.report{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.55 ui-monospace,Consolas,monospace;margin:8px 0}.small{font-size:.83rem}code,.hash{font:12px/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}.result{border-top:5px solid var(--blue)}.result[data-verdict="unsupported"]{border-top-color:#a14e29}.result[data-verdict="abstain"]{border-top-color:#9a7728}.qualification{border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:.88rem}ul{padding-left:22px}.skip{position:absolute;left:10px;top:-60px;background:white;padding:10px}.skip:focus{top:10px}footer{color:var(--muted);font-size:.8rem;margin-top:26px}[hidden]{display:none!important}
+    @media(max-width:760px){.layout{grid-template-columns:1fr}.wrap{padding:18px}.card{padding:18px}header{align-items:flex-start}.badge{max-width:175px}textarea{min-height:310px}}@media(max-width:380px){.wrap{padding:12px}.card{padding:15px}.badge{max-width:145px}button{width:100%}textarea{font-size:12px}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#caseSelect">Skip to fictional case</a>
+<div class="wrap">
+  <header><div class="brand">Evidence before a verdict</div><div id="providerBadge" class="badge">Private prototype · Nebius disconnected</div></header>
+  <main>
+    <h1>A diagnosis needs more than a convincing explanation.</h1>
+    <p class="muted">Review a fictional code-change case, inspect a structured candidate, then check its source identity and evidence. Nothing executes or edits your repository.</p>
+    <div id="message" class="notice" role="status" aria-live="polite">Loading local fictional cases.</div>
+    <label class="field" for="caseSelect">Fictional case</label><select id="caseSelect" disabled></select>
+    <section class="card" aria-labelledby="providerTitle" style="margin-top:20px"><h2 id="providerTitle">Adapter candidate</h2><p id="providerStatus" class="small muted" role="status" aria-live="polite">Nebius is disconnected. Fixture checks remain available.</p><button id="propose" type="button" disabled>Provider disconnected</button><p class="small muted" style="margin-top:10px">Only the selected authored fictional case can be sent. One request at a time; no automatic retry. A locally checked candidate does not establish provider execution, billing, model quality or contest qualification.</p></section>
+    <div class="layout">
+      <section class="card" aria-labelledby="sourceTitle"><h2 id="sourceTitle">Captured evidence</h2><p id="sourceHash" class="hash"></p><div id="evidence"></div><h3>Hypotheses to review</h3><ul id="hypotheses"></ul><p class="qualification">These are authored fictional fixtures with typed expectations. A valid citation is not a general proof that arbitrary prose or real code is correct.</p></section>
+      <section class="card" aria-labelledby="candidateTitle"><h2 id="candidateTitle">Fixture candidate for review</h2><p class="muted small">Every sample below is synthetic. No model generated it. Adapter results appear in the report below, separately from this editor.</p><div class="toolbar"><button type="button" data-sample="supported">Load fixture sample</button><button type="button" data-sample="invented">Invented citation</button><button type="button" data-sample="stale">Stale source</button><button type="button" data-sample="abstain">Abstain</button></div><label class="field" for="candidate">Structured fixture candidate JSON</label><textarea id="candidate" spellcheck="false" disabled></textarea><p class="small muted">Up to 8192 UTF-8 bytes. Editing clears the previous report.</p><button id="validate" type="button" class="primary" disabled>Validate against this evidence</button></section>
+    </div>
+    <section id="result" class="card result" aria-labelledby="resultTitle" hidden><h2 id="resultTitle" tabindex="-1"></h2><p id="diagnosis"></p><h3>Proposed explanation — not automatically verified</h3><p id="explanation"></p><ul id="issues"></ul><h3>Exact citation trace</h3><div id="trace"></div><p id="qualification" class="qualification"></p><p id="reportHash" class="hash"></p><button id="download" type="button">Download validation report</button></section>
+  </main>
+  <footer>Fictional inputs only. No Nebius request, live model quality, runtime qualification, account change, purchase, deployment or contest submission is established.</footer>
+</div>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+let loaded=null,busy=false,currentReport=null,currentProvenance=null,generation=0,activeProposal=null;
+const unresolvedAttempts=new Map();
+let providerConfig={mode:'disconnected',proposal_available:false,provider:{status:'disconnected',execution_verified:false}};
+function node(tag,text,className){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(className)e.className=className;return e;}
+function say(text,error=false){$('message').textContent=text;$('message').className='notice'+(error?' error':'');}
+function clearReport(){currentReport=null;currentProvenance=null;$('result').hidden=true;}
+function canIdentify(){return typeof globalThis.crypto?.randomUUID==='function';}
+function sourceKey(c){return c.id+':'+c.source_sha256;}
+function controls(){const locked=busy||!loaded,original=loaded?unresolvedAttempts.get(sourceKey(loaded.case)):null;$('caseSelect').disabled=busy&&!activeProposal;$('candidate').disabled=locked;$('validate').disabled=locked||!$('candidate').value.trim();for(const b of document.querySelectorAll('[data-sample]'))b.disabled=locked;$('propose').disabled=locked||!providerConfig.proposal_available||(!original&&!canIdentify());$('propose').textContent=activeProposal?'Request pending...':original?'Check original attempt':providerConfig.mode==='mock'?'Mock adapter candidate':providerConfig.mode==='configured_unverified'?'Generate candidate (execution unverified)':'Provider disconnected';}
+function invalidateProposal(){generation++;if(activeProposal?.controller)activeProposal.controller.abort();if(activeProposal){busy=false;$('providerStatus').textContent+=' Previous request detached: stopping this UI does not prove remote cancellation or zero charge. Its original request ID is retained; no automatic retry.';}activeProposal=null;}
+function providerView(){const mode=providerConfig.mode;$('propose').textContent=mode==='mock'?'Mock adapter candidate':mode==='configured_unverified'?'Generate candidate (execution unverified)':'Provider disconnected';$('providerBadge').textContent=mode==='mock'?'Mock adapter · no live provider':mode==='configured_unverified'?'Provider configured · execution unverified':'Private prototype · Nebius disconnected';$('providerStatus').textContent=mode==='mock'?'Injected mock transport only. No Nebius execution or model-quality evidence.':mode==='configured_unverified'?'An explicit transport is configured. Provider execution, billing and entitlement remain unverified.':'Nebius is disconnected. Fixture checks remain available.';if(providerConfig.proposal_available&&!canIdentify())$('providerStatus').textContent+=' Secure request identifiers are unavailable; adapter requests stay disabled.';controls();}
+async function api(url,options={}){let r;try{r=await fetch(url,{cache:'no-store',...options,headers:{'Content-Type':'application/json'}});}catch{throw Error(url==='/api/propose'?'Proposal response unavailable. An attempt may have started; execution and billing are unknown. No automatic retry.':'Local server unavailable. No candidate was executed or saved.');}let d;try{d=await r.json();}catch{throw Error(url==='/api/propose'?'Unreadable proposal response. Execution and billing may be unknown; no automatic retry.':'Unreadable local response. Previous report cleared.');}if(!r.ok)throw Error(typeof d.error==='string'?d.error:'Local request failed.');return d;}
+async function readProvider(){try{const d=await api('/api/provider');const states={disconnected:'disconnected',mock:'mock_transport',configured_unverified:'configured_unverified'};if(!Object.hasOwn(states,d.mode)||d.provider?.status!==states[d.mode]||d.provider?.execution_verified!==false||typeof d.proposal_available!=='boolean'||(d.mode==='disconnected'&&d.proposal_available))throw Error('Provider configuration is unverified.');providerConfig=d;}catch{providerConfig={mode:'disconnected',proposal_available:false,provider:{status:'disconnected',execution_verified:false}};}providerView();}
+async function loadCase(){invalidateProposal();const token=generation;clearReport();loaded=null;busy=true;$('candidate').value='';$('evidence').replaceChildren();$('hypotheses').replaceChildren();$('sourceHash').textContent='';controls();try{const incoming=await api('/api/cases/'+encodeURIComponent($('caseSelect').value));if(token!==generation)return;loaded=incoming;const c=loaded.case;$('sourceHash').textContent='Source SHA256 '+c.source_sha256;for(const item of c.evidence){const card=node('div',undefined,'evidence');card.append(node('strong',item.id+' · '+item.kind),node('p',item.source,'small muted'),node('pre',item.text));$('evidence').append(card);}for(const d of c.diagnoses)$('hypotheses').append(node('li',d.id+' - '+d.label));$('candidate').value=JSON.stringify(loaded.samples.supported,null,2);say(providerConfig.mode==='disconnected'?'Fictional evidence loaded. Nebius is disconnected; inspect the synthetic candidate.':'Fictional evidence loaded. Fixture samples and adapter candidates are separate.');}catch(e){if(token===generation){loaded=null;say(e.message,true);}}finally{if(token===generation){busy=false;controls();}}}
+function renderReport(report,note='Fixture validation only. Nebius remains disconnected.',provenance=null){const state=report?.verdict;if(!['supported','unsupported','abstain'].includes(state)||!Array.isArray(report.issues)||!Array.isArray(report.trace))throw Error('Unknown report state.');currentReport=report;currentProvenance=provenance;$('result').dataset.verdict=state;$('resultTitle').textContent=state==='supported'?'Supported within this fictional evidence contract':state==='unsupported'?'Unsupported - do not rely on this candidate':'Abstained - cause remains unresolved';$('diagnosis').textContent=report.diagnosis_label||'No diagnosis asserted.';$('explanation').textContent=report.explanation;$('issues').replaceChildren(...report.issues.map(t=>node('li',t)));$('trace').replaceChildren();if(!report.trace.length)$('trace').append(node('p','No supporting citations asserted.','muted'));for(const item of report.trace){const card=node('div',undefined,'evidence');card.append(node('strong',item.id+(item.found?' · found':' · not found')));if(item.found)card.append(node('p',item.source,'small muted'),node('pre',item.text));$('trace').append(card);}$('qualification').textContent=report.qualification+' '+note;$('reportHash').textContent='Deterministic validation-report SHA256 '+report.report_sha256;$('result').hidden=false;$('resultTitle').focus();}
+$('caseSelect').addEventListener('change',loadCase);
+$('candidate').addEventListener('input',()=>{invalidateProposal();clearReport();say('Candidate changed. Validate again before using any report.');controls();});
+for(const b of document.querySelectorAll('[data-sample]'))b.addEventListener('click',()=>{if(busy||!loaded)return;invalidateProposal();clearReport();$('candidate').value=JSON.stringify(loaded.samples[b.dataset.sample],null,2);say('Synthetic sample loaded; no model call occurred.');controls();});
+$('validate').addEventListener('click',async()=>{if(busy||!loaded)return;invalidateProposal();const token=generation;clearReport();busy=true;controls();const id=loaded.case.id,source=loaded.case.source_sha256;try{const data=await api('/api/validate',{method:'POST',body:JSON.stringify({case_id:id,candidate:$('candidate').value})});if(token!==generation)return;if(data.report?.case_id!==id||data.report?.source_sha256!==source||data.report?.provider?.status!=='disconnected')throw Error('Report did not match the selected private source.');renderReport(data.report);say('Local validation complete. Review the exact trace; no code or repository changed.');}catch(e){if(token===generation){clearReport();say(e.message,true);}}finally{if(token===generation){busy=false;controls();}}});
+function proposalRecovery(p,requestId){
+  const uncertain=p.outcome==='request_uncertain'||p.execution_may_have_occurred===true;
+  const noAttempt=['configuration_error','disconnected'].includes(p.outcome)&&p.attempts===0&&p.execution_may_have_occurred===false;
+  const hasOriginal=p.original_request_id!==undefined;
+  const localBarrier=noAttempt&&p.outcome==='configuration_error'&&p.original_request_id===requestId;
+  if(hasOriginal&&((!localBarrier&&!(p.outcome==='request_uncertain'&&p.attempts===0))||typeof p.original_request_id!=='string'||!/^[A-Za-z0-9_-]{8,80}$/.test(p.original_request_id)))throw Error('Original attempt identity is invalid. Inspect durable state before any new attempt.');
+  return {uncertain,noAttempt,localBarrier,retainOriginal:!noAttempt||localBarrier,originalRequestId:hasOriginal?p.original_request_id:null};
+}
+// proposal-recovery-end
+$('propose').addEventListener('click',async()=>{
+  if(busy||!loaded||!providerConfig.proposal_available)return;
+  invalidateProposal();const token=generation,id=loaded.case.id,source=loaded.case.source_sha256,mode=providerConfig.mode;
+  const key=sourceKey(loaded.case),original=unresolvedAttempts.get(key);
+  if(original&&original.mode!==mode){say('The original attempt belongs to another provider mode. Inspect its original receipt before starting anything new.',true);controls();return;}
+  if(!original&&!canIdentify())return;
+  const requestId=original?original.requestId:'ui-'+globalThis.crypto.randomUUID();
+  unresolvedAttempts.set(key,{requestId,mode});
+  const controller=typeof AbortController==='function'?new AbortController():null;
+  activeProposal={token,requestId,controller};clearReport();$('candidate').value='';busy=true;controls();
+  say(original?'Checking the original request ID once. No replacement attempt is requested.':mode==='mock'?'Requesting one injected mock candidate. No live provider is involved.':'Requesting one candidate. Execution and billing remain unverified; no automatic retry.');
+  try{
+    const options={method:'POST',body:JSON.stringify({case_id:id,source_sha256:source,request_id:requestId})};if(controller)options.signal=controller.signal;
+    const data=await api('/api/propose',options);
+    if(token!==generation||activeProposal?.requestId!==requestId||loaded?.case.id!==id||loaded?.case.source_sha256!==source)return;
+    const p=data.proposal;
+    const expectedStatus=mode==='mock'?'mock_transport':'configured_unverified';
+    if(data.mode!==mode||data.request_id!==requestId||p?.case_id!==id||p?.source_sha256!==source||p?.provider?.execution_verified!==false||p?.provider?.status!==expectedStatus||p?.automatic_retries!==0||p?.billing_verified!==false)throw Error('Proposal did not match this source, request or unverified provider boundary. No automatic retry.');
+    const recovery=proposalRecovery(p,requestId);
+    if(recovery.originalRequestId)unresolvedAttempts.set(key,{requestId:recovery.originalRequestId,mode});
+    if(!['candidate_checked','candidate_rejected'].includes(p.outcome)){
+      clearReport();
+      if(!recovery.retainOriginal)unresolvedAttempts.delete(key);
+      say((recovery.uncertain?'No usable candidate. An attempt may have started; execution and billing are unknown. ':recovery.localBarrier?'No provider dispatch occurred; local reservation release is unverified. ':'No candidate is available. ')+(typeof p.error==='string'?p.error+' ':'')+(recovery.retainOriginal?'Original request ID retained. Use Check original attempt for a manual receipt recheck. ':'')+'No automatic retry.',true);
+      return;
+    }
+    if(p.attempts!==1||p.report?.case_id!==id||p.report?.source_sha256!==source||p.report?.provider?.status!=='disconnected')throw Error('Candidate report did not match the selected authored source.');
+    const note=mode==='mock'?'Candidate origin: injected mock transport. No live Nebius execution or model quality is established.':'Candidate origin: configured transport, execution unverified. Entitlement, remote execution and billing are not established by this report.';
+    renderReport(p.report,note,{mode,request_id:requestId,attempts:p.attempts,execution_verified:false,billing_verified:false,qualification:p.qualification});
+    unresolvedAttempts.delete(key);
+    say(mode==='mock'?'Mock candidate checked locally. Review the trace; this is not live-model evidence.':'Candidate checked locally. Review the trace; provider execution and billing remain unverified.');
+  }catch(e){if(token===generation){clearReport();say(e.message+' Original request ID retained. Use Check original attempt; no replacement request will be generated.',true);}}
+  finally{if(token===generation){activeProposal=null;busy=false;controls();}}
+});
+$('download').addEventListener('click',()=>{if(!currentReport)return;const payload=currentProvenance?{report:currentReport,candidate_origin:currentProvenance}:currentReport;const blob=new Blob([JSON.stringify(payload,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=currentReport.case_id+'-validation-report.json';a.click();URL.revokeObjectURL(url);});
+async function start(){busy=true;controls();try{const d=await api('/api/cases');if(d.provider?.status!=='disconnected')throw Error('Fixture catalog state is not the expected disconnected prototype.');for(const c of d.cases){const o=node('option',c.title);o.value=c.id;$('caseSelect').append(o);}await loadCase();await readProvider();}catch(e){say(e.message,true);}finally{busy=false;controls();}}
+start();
+</script>
+</body>
+</html>

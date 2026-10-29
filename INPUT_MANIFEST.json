@@ -1,0 +1,24 @@
+{
+  "schema": "nebius-production-wiring-sources-v3",
+  "files": {
+    "attempt_binding.py": "71735b9dba087efec5be162210c2c1461d0989184df404a650ed3fdf2b2388f6",
+    "cloud_attempts.py": "20e545e7f53afe89cafc1dfab5e2553022ce460a28d194ddebea124ad50647a4",
+    "cloud_bootstrap.py": "97b399c919aff03313d583b55d831dc8192831f21343dc220cbff4b18707936e",
+    "edge_base.py": "09fcb572a2ab09248faed5b8f2f267bf083fa28629a6d922964c0d9cc3b2b29d",
+    "global_quota_v2.py": "330b2cf136ad2ddbab80832362a417d799967f2693bf3ee468607678e1e9b808",
+    "index.html": "7df76fb52ba81e63ae762e33418f15bd349ad44e03838ef363305aa1a0869867",
+    "nebius_adapter.py": "becbad4bc220a5ab46fac58b4374a5bece0f19765989576483f60ddfca691f4f",
+    "nebius_composition.py": "6a8828661b2dddf81cd240b48e3c0e5ee5b4d529ff1993de162f0dda6e1d9201",
+    "nebius_host.py": "448211549632c8d9590047f722dd58e8146f23b92b10ab813cc08ef960677a17",
+    "nebius_http.py": "355a8452051b40704b03b3961dd991b322c044ef4719a420d73a7c12831b8e0e",
+    "production_wiring.py": "80db30e0c789768710c410c79f6b95b910d6a33d4e480a9d78af445ac9b1c432",
+    "proposal_service.py": "e8ae28e8a4d0649fab064aa3a939fe78aa5477d3e04bae17d6c863047e7f3bf5",
+    "run_checks.py": "c9519723eb30c2ea6f57fc28cdee91e9a90a029666e156f189ddc119f4f9b598",
+    "run_linux.ps1": "097d68c522c5dcd772afa493506ba3374c41011cc7bb7ca7d5cce8643789e61f",
+    "SDK_CLOSURE.json": "9e8ce1ea2d183b86a3bc27883ac81bc983033a0e4d144d744c21274df7d445f5",
+    "test_global_quota_v2.py": "5ad3131aa39e2e8c0ba6e303feed87210a63058d404ea8fa54153e7d36a4578a",
+    "test_nebius_http.py": "bcd572fc2eb1f08c3211f6ebcedb7299eb2d555f0ade026bb55b0f80c024ec0f",
+    "test_production_wiring.py": "9f25a5aacf0763dd8debcc029c79be9b4f0fda7f1d57a9531d76abf0b80b8719",
+    "triage.py": "aa9b01ee872c5b9e4236f85db68f5c49ff139dacd8491360bfba012f2af342f4"
+  }
+}

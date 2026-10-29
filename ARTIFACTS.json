@@ -1,0 +1,85 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1767934,
+      "filename": "aiohttp-3.13.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "id": "aiohttp",
+      "kind": "wheel",
+      "sha256": "b18f31b80d5a33661e08c89e202edabf1986e9b49c42b4504371daeaa11b47c1",
+      "url": "https://files.pythonhosted.org/packages/57/d8/8d44036d7eb7b6a8ec4c5494ea0c8c8b94fbc0ed3991c1a7adf230df03bf/aiohttp-3.13.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
+    },
+    {
+      "bytes": 15265,
+      "filename": "aiohappyeyeballs-2.6.1-py3-none-any.whl",
+      "id": "aiohappyeyeballs",
+      "kind": "wheel",
+      "sha256": "f349ba8f4b75cb25c99c5c2d84e997e485204d2902a9597802b0371f09331fb8",
+      "url": "https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl"
+    },
+    {
+      "bytes": 7490,
+      "filename": "aiosignal-1.4.0-py3-none-any.whl",
+      "id": "aiosignal",
+      "kind": "wheel",
+      "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e",
+      "url": "https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl"
+    },
+    {
+      "bytes": 63815,
+      "filename": "attrs-25.3.0-py3-none-any.whl",
+      "id": "attrs",
+      "kind": "wheel",
+      "sha256": "427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3",
+      "url": "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl"
+    },
+    {
+      "bytes": 13409,
+      "filename": "frozenlist-1.8.0-py3-none-any.whl",
+      "id": "frozenlist",
+      "kind": "wheel",
+      "sha256": "0c18a16eab41e82c295618a77502e17b195883241c563b00f0aa5106fc4eaa0d",
+      "url": "https://files.pythonhosted.org/packages/9a/9a/e35b4a917281c0b8419d4207f4334c8e8c5dbf4f3f5f9ada73958d937dcc/frozenlist-1.8.0-py3-none-any.whl"
+    },
+    {
+      "bytes": 12319,
+      "filename": "multidict-6.7.1-py3-none-any.whl",
+      "id": "multidict",
+      "kind": "wheel",
+      "sha256": "55d97cc6dae627efa6a6e548885712d4864b81110ac76fa4e534c03819fa4a56",
+      "url": "https://files.pythonhosted.org/packages/81/08/7036c080d7117f28a4af526d794aab6a84463126db031b007717c1a6676e/multidict-6.7.1-py3-none-any.whl"
+    },
+    {
+      "bytes": 13305,
+      "filename": "propcache-0.4.1-py3-none-any.whl",
+      "id": "propcache",
+      "kind": "wheel",
+      "sha256": "af2a6052aeb6cf17d3e46ee169099044fd8224cbaf75c76a2ef596e8163e2237",
+      "url": "https://files.pythonhosted.org/packages/5b/5a/bc7b4a4ef808fa59a816c17b20c4bef6884daebbdf627ff2a161da67da19/propcache-0.4.1-py3-none-any.whl"
+    },
+    {
+      "bytes": 48288,
+      "filename": "yarl-1.23.0-py3-none-any.whl",
+      "id": "yarl",
+      "kind": "wheel",
+      "sha256": "a2df6afe50dea8ae15fa34c9f824a3ee958d785fd5d089063d960bae1daa0a3f",
+      "url": "https://files.pythonhosted.org/packages/69/68/c8739671f5699c7dc470580a4f821ef37c32c4cb0b047ce223a7f115757f/yarl-1.23.0-py3-none-any.whl"
+    },
+    {
+      "bytes": 70442,
+      "filename": "idna-3.10-py3-none-any.whl",
+      "id": "idna",
+      "kind": "wheel",
+      "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3",
+      "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl"
+    },
+    {
+      "bytes": 44614,
+      "filename": "typing_extensions-4.15.0-py3-none-any.whl",
+      "id": "typing-extensions",
+      "kind": "wheel",
+      "sha256": "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548",
+      "url": "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl"
+    }
+  ],
+  "schema": "public-artifacts-v1"
+}

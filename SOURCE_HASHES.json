@@ -1,0 +1,75 @@
+{
+  "files": {
+    "HTTP_DEPENDENCY_CLOSURE.json": {
+      "bytes": 35161,
+      "sha256": "43464f3c4fd6948d209e5f02e0adede8909d248f3d2bb71f8c3dae18daf466db"
+    },
+    "INPUT_MANIFEST.json": {
+      "bytes": 1855,
+      "sha256": "ef011d9efafdfde121b69c5d02c7f333539fc20828e2b14d71f1ef957d13d767"
+    },
+    "PACKAGE_LOCK.json": {
+      "bytes": 36733,
+      "sha256": "c5222f95b727b7597c130ecd31087a0a76edc8298a8afcf5031232b12f4c5d87"
+    },
+    "SDK_CLOSURE.json": {
+      "bytes": 433139,
+      "sha256": "9e8ce1ea2d183b86a3bc27883ac81bc983033a0e4d144d744c21274df7d445f5"
+    },
+    "attempt_binding.py": {
+      "bytes": 10281,
+      "sha256": "71735b9dba087efec5be162210c2c1461d0989184df404a650ed3fdf2b2388f6"
+    },
+    "cloud_attempts.py": {
+      "bytes": 23754,
+      "sha256": "20e545e7f53afe89cafc1dfab5e2553022ce460a28d194ddebea124ad50647a4"
+    },
+    "edge_base.py": {
+      "bytes": 21361,
+      "sha256": "09fcb572a2ab09248faed5b8f2f267bf083fa28629a6d922964c0d9cc3b2b29d"
+    },
+    "global_quota_v2.py": {
+      "bytes": 21617,
+      "sha256": "330b2cf136ad2ddbab80832362a417d799967f2693bf3ee468607678e1e9b808"
+    },
+    "index.html": {
+      "bytes": 19898,
+      "sha256": "7df76fb52ba81e63ae762e33418f15bd349ad44e03838ef363305aa1a0869867"
+    },
+    "nebius_adapter.py": {
+      "bytes": 11328,
+      "sha256": "becbad4bc220a5ab46fac58b4374a5bece0f19765989576483f60ddfca691f4f"
+    },
+    "nebius_composition.py": {
+      "bytes": 15350,
+      "sha256": "6a8828661b2dddf81cd240b48e3c0e5ee5b4d529ff1993de162f0dda6e1d9201"
+    },
+    "nebius_host.py": {
+      "bytes": 13226,
+      "sha256": "448211549632c8d9590047f722dd58e8146f23b92b10ab813cc08ef960677a17"
+    },
+    "nebius_http.py": {
+      "bytes": 12911,
+      "sha256": "355a8452051b40704b03b3961dd991b322c044ef4719a420d73a7c12831b8e0e"
+    },
+    "package_entry.py": {
+      "bytes": 17661,
+      "sha256": "e298762bc300d601f788c5e378d0961f57925b6476922f7f235b3de448ee24ee"
+    },
+    "production_wiring.py": {
+      "bytes": 25186,
+      "sha256": "80db30e0c789768710c410c79f6b95b910d6a33d4e480a9d78af445ac9b1c432"
+    },
+    "proposal_service.py": {
+      "bytes": 13175,
+      "sha256": "e8ae28e8a4d0649fab064aa3a939fe78aa5477d3e04bae17d6c863047e7f3bf5"
+    },
+    "triage.py": {
+      "bytes": 9463,
+      "sha256": "aa9b01ee872c5b9e4236f85db68f5c49ff139dacd8491360bfba012f2af342f4"
+    }
+  },
+  "packagingChanges": [],
+  "runtimeCodeChanged": false,
+  "schema": "public-own-source-v2"
+}

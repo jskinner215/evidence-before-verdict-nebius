@@ -1,0 +1,8 @@
+Evidence Before a Verdict
+Copyright (c) 2026 Jordan Skinner
+
+Original application source is provided under the included MIT License.
+
+This source tree does not redistribute third-party executable code, Python dependency packages, Node.js, provider credentials or service data. The licenses directory preserves original notices for the referenced runtime dependencies. The lock files record the exact dependency closure used by the frozen runtime candidate.
+
+The HTTP transport uses aiohttp 3.13.5 (Apache-2.0) and its dependencies. The host uses the separately installed AWS SDK. Nebius services, NVIDIA model materials and marks retain their own terms. No model weights are included.

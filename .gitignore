@@ -1,0 +1,16 @@
+.env
+.env.*
+*.key
+*.pem
+__pycache__/
+.pytest_cache/
+.git/
+private/
+receipts/
+logs/
+*.raw.jsonl
+*.zip
+runtime/
+deps/
+official-source/
+dependency-review/
